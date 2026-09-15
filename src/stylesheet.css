@@ -15,7 +15,7 @@ body{
 
 
 header{
-    color: #FBFADA;
+    color: #C9A84C;
     display: flex;
     height: 80px;
     align-items: center;
@@ -24,6 +24,7 @@ header{
 }
 
 header h1{
+
     font-size: 3rem;
     margin-left: 0.5em;
     letter-spacing: 5px;
@@ -130,4 +131,48 @@ nav button.active {
     
 }
 
+.about{
+    color: #FBFADA;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    flex-direction: column;
+}
 
+.about h2  {
+    font-size: 3rem;
+}
+
+.about-container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20vh;
+}
+
+.about-container img {
+    scale: 1.5;
+    border-right: solid 3px #C9A84C;
+}
+
+.text-container{
+    width: 40vw;
+    text-align: left;
+    height: 100%;
+    justify-self: left;
+    margin-top: -10vh;
+
+}
+
+.text-container h3{
+    font-size: 5rem;
+    color: #C9A84C;
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+
+.text-container p {
+    font-size: 3rem;
+}
