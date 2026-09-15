@@ -10,8 +10,9 @@ html{
 
 body{
     background-color: #12372A;
-    
+    height: 100%;
 }
+
 
 header{
     color: #FBFADA;
@@ -106,7 +107,27 @@ nav button.active {
     justify-content: space-between;
 }
 
+.menu {
+    color:#FBFADA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+    padding: 0 20vw ;
+    gap: 2rem;
+}
 
+.menu h2 {
+    font-size: 3rem;
+    letter-spacing: 0.5em;
+}
 
+.menu-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 30px;
+    
+}
 
 
