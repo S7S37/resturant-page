@@ -4,9 +4,19 @@ import displayMenu from "./menu.js"
 import displayAbout from "./about.js"
 
 function addEventListener (){
-    document.querySelector(".Home").addEventListener("click", displayHome)
-    document.querySelector(".Menu").addEventListener("click", displayHome)
-    document.querySelector(".About").addEventListener("click", displayHome)
+    displayHome()
+    function resetContent(){
+        document.querySelector("#content").textContent = ""
+    }
+    document.querySelector(".Home").addEventListener("click",() =>{ 
+        resetContent()
+        displayHome()})
+    document.querySelector(".Menu").addEventListener("click",() =>{ 
+        resetContent() 
+        displayMenu()})
+    document.querySelector(".About").addEventListener("click",() =>{ 
+        resetContent() 
+        displayAbout()})
 }
 
 addEventListener()
